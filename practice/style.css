@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+body{
+    background-color:whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+}
+article{
+    border: 2px solid white;
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    width: 50%; 
+    padding: 30px;
+
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
+.box1{
+    padding: 12px;
+    width: 100%;
+    height: 35px;
+    background-color: rgb(166, 238, 238);
+    text-align: center;
+   
+}
+
+hr{
+  border: 1px solid hsl(0, 1%, 86%);
+}
+h1{
+  text-align: center;
+}
+
+.dropbtn {
+    
+  color: #fff;
+  font-size: 17px;
+  margin-right: 10px;
+  border: none;
+  
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 15px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #868484;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {  background-color: #333;}
+
+.box1 a:hover {color: green;}
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #4d4d4d;
+  position: relative;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+ 
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+#id5{
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border: 1px solid whitesmoke;
+  padding: 20px;
+  box-shadow: 2px 2px 2px #04AA6D;
+  
+  margin: 20px;
+}
+#id6{
+  padding: 16px;
+  background-color: white;
+}
+input[type=text], input[type=email]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background-color: #f1f1f1;
+}
+input[type=text]:focus, input[type=email]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.contact {
+  background-color:  #04AA6D;
+  color: black;
+  font-weight: 600;
+  padding: 10px 20px;
+  opacity: 0.9;
+  border-radius: 20px;
+  width: 100%;
+
+}
+.foter{
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+a{
+  padding: 30px;
+}
+
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 0px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 250px);
+    overflow-y: auto;
+  }
+}
+article{
+  width: 100%;
+}
+
+
+
+
+
+
+@media screen and (max-width: 630px){
+    section{
+        display: inline;
+        margin: 200px;
+        
+    }
+    img{
+        width: 200px;
+        height: 200px;
+    }
+    video{
+        width: 200px;
+        height: 200px;
+        
+    }
+    .nav{
+        background-color: green;
+    }
+    
+    
+    .box1{
+        border: 2px solid white;
+        background-color: green;
+        flex-basis: 50px;
+        flex-flow: wrap column;
+    }
+    .dropdown{
+      margin-left: -20px;
+      padding-top: 12px ;
+    }
+    .dropdown-content{
+      margin-left: 90px;
+    }
+    .icon img{
+      width: 25px;
+      height: 20px;
+  
+    }
+    
+}
+@media (min-width:1279px){
+    section{
+        display: flex;
+    }
+    article{
+        width: 640px;
+        padding: 20px;
+        margin: 20px
+    }
+}
+
+@media screen and (max-width: 550px){
+  
+  img{
+    width: 350px;
+  }
+  video{
+    width: 350px;
+  }
+}
+
+   
